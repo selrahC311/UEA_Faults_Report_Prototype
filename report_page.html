@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.104.2">
-  <title> Template · Bootstrap v5.2</title>
+  <title>Sticky Footer Navbar Template · Bootstrap v5.2</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sticky-footer-navbar/">
 
@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-  
+  <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
   <link rel="stylesheet" href="assets/style.css" color="#712cf9">
   <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#712cf9">
@@ -85,7 +85,7 @@
   <link href="sticky-footer-navbar.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100 bg-primary">
+<body class="d-flex flex-column h-100">
 
   <header>
     <!-- Fixed navbar -->
@@ -111,15 +111,69 @@
   <main class="flex-shrink-0">
     <div class="container more-margin">
       <div class="row">
-        <div class="card-body col-md-8 mx-auto">
-          <!-- add card -->
-          Report have been successfully file. Thank your for reporting...
-          <div>
-            <a href="index.html" class="btn btn-success">Go Back to homepage</a>
+        <div class="col-md-8 mx-auto">
+          <div class="card card-body border-0 shadow">
+            <div class="card-header"><strong>
+                Enter the details required for reporting faults below:
+              </strong></div>
+            <div class="small">
+              Fields with <span class="text-danger">*</span> is required.
+            </div>
+            <div class="card-body">
+              <form action="success.html" method="post">
+                <div class="form-group mb-3">
+                  <label for="id_fault_location"><span class="text-danger">*</span>Fault Location</label>
+                  <input required type="text" name="fault_location" id="id_fault_location"
+                    placeholder="Please enter fault's building ID and room number" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="id_faults_report"><span class="text-danger">*</span>Fault Report Details</label>
+                  <textarea required name="fault_report" id="id_faults_report" cols="30" rows="5" class="form-control"
+                    placeholder="Please enter the details of your fault"></textarea>
+                </div>
+                <hr>
+                <p>
+                  If you would like an update or result for the repair, please leave your preferred contact below:
+                </p>
+                <div class="form-group mb-3">
+                  <label for="id_name">Name</label>
+                  <input type="text" name="name" id="id_name" placeholder="Enter your name" class="form-control">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="id_email">Email Address</label>
+                  <input type="email" name="email" id="id_email" placeholder="Enter your email" class="form-control">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="id_contact">Contact Number</label>
+                  <input type="text" name="name" id="id_contact" placeholder="Enter your contact number"
+                    class="form-control">
+                </div>
+
+                <div class="form-group mb-3">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+        <!-- <div class="col-md-4">
+            <div class="card card-body border-0 shadow text-center">
+                <h1 class="text-center">REPORT A FAULT</h1>
+                <p>Report fault that require maintenance 24 hours</p>
+                <h2><span class="badge bg-primary">Report Faults Now</span></h2>
+                <p>For emergency maintenance that require immediate response, please prepare your information and contact number:</p>
+                <strong>01603 59 2121</strong>
+            </div>
+        </div> -->
       </div>
     </div>
+    <script>
+      function reportsuccessful() {
+        location.href = "success.html";
+      }
+    </script>
   </main>
 
   <!-- <footer class="footer mt-auto py-3 bg-light">
