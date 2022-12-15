@@ -29,3 +29,13 @@ main {
     background-color: #920202;
     border-color: #920202;
 }
+
+.img-size {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-size {
+    width: 30px;
+    height: 30px;
+}
