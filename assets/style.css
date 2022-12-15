@@ -1,7 +1,31 @@
 .more-margin {
-    margin-top: 100px;
+    /* margin-top: 50px; */
 }
 
 main {
-   /* margin-top: 50px; */
+    margin-top: 50px;
+}
+
+.bg-mid {
+    color: #bb5f09;
+    background-color: #ffffff;
+    border-color: #bb5f09;
+}
+
+.bg-high {
+    color: rgb(255, 0, 0);
+    background-color: #ffffff;
+    border-color: #ff0000;
+}
+
+.bg-low {
+    color: rgb(214, 182, 0);
+    background-color: #ffffff;
+    border-color: rgb(214, 182, 0);
+}
+
+.bg-emergency {
+    color: #fff;
+    background-color: #920202;
+    border-color: #920202;
 }

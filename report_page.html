@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.104.2">
-  <title>Sticky Footer Navbar Template · Bootstrap v5.2</title>
+  <title>Enter Faults details</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sticky-footer-navbar/">
 
@@ -99,7 +99,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Report faults</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Report faults</a>
             </li>
           </ul>
         </div>
@@ -122,14 +122,19 @@
             <div class="card-body">
               <form action="success.html" method="post">
                 <div class="form-group mb-3">
-                  <label for="id_fault_location"><span class="text-danger">*</span>Fault Location</label>
+                  <label for="id_fault_location"><span class="text-danger">*</span>Fault Building</label>
                   <input required type="text" name="fault_location" id="id_fault_location"
-                    placeholder="Please enter fault's building ID and room number" class="form-control">
+                    placeholder="Please enter fault's building ID or name of building" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="id_faults_report"><span class="text-danger">*</span>Fault Location</label>
+                  <input required type="text" id="fault_room" id="id_fault_room" class="form-control"
+                    placeholder="Please enter room number or name of the room">
                 </div>
                 <div class="form-group mb-3">
                   <label for="id_faults_report"><span class="text-danger">*</span>Fault Report Details</label>
                   <textarea required name="fault_report" id="id_faults_report" cols="30" rows="5" class="form-control"
-                    placeholder="Please enter the details of your fault"></textarea>
+                    placeholder="Please describe the condition of the fault"></textarea>
                 </div>
                 <hr>
                 <p>

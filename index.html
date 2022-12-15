@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Sticky Footer Navbar Template · Bootstrap v5.2</title>
+    <title>Report Faults</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sticky-footer-navbar/">
 
@@ -109,26 +109,56 @@
     <main class="flex-shrink-0">
         <div class="container more-margin">
             <div class="row">
-           <div class="col-md-4 mx-auto">
-            <div class="card card-body border-0 shadow text-center">
-                <h1 class="text-center"><strong>
-                        REPORT A FAULT
-                    </strong></h1>
-                <p>Report fault that require maintenance 24 hours</p>
-                <!-- <h2><span class="badge bg-primary">Report Faults Now</span></h2> -->
-                <button type="button" class="btn btn-primary btn-lg" onclick="reportfaults()">
-                    Report Faults Now
-                </button>
-                <p>For emergency maintenance that require immediate response, please prepare your information and
-                    contact number:
-                </p>
-                <strong>01603 59 2121</strong>
+                <div class="col-md-9 mx-auto">
+                    <div class="card card-body border-0 shadow text-center">
+                        <h1 class="text-center"><strong>
+                                REPORT A FAULT
+                            </strong></h1>
+                        <p>Report fault required maintenance anytime 24 hours</p>
+                        <!-- <h2><span class="badge bg-primary">Report Faults Now</span></h2> -->
+                        <button type="button" class="btn btn-primary btn-lg mx-auto col-sm-7" onclick="reportfaults()">
+                            Report Faults Now
+                        </button>
+                        <p></p>
+                        <p>
+                            For emergency maintenance that require immediate response, please prepare your information
+                            and contact number:
+                        </p>
+                        <!-- Button trigger modal -->
+                        <div id="container" style="white-space:nowrap">
+
+                            <div id="image" style="display:inline;">
+                                <img src="icons/call.png" type="button" class="img-size btn-size mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            </div>
+
+                            <div id="texts" style="display:inline; white-space:nowrap;">
+                                <strong style="display:inline;">01603 59 2121</strong>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-        </div> 
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Calling...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
+
+
         <script>
             function reportfaults() {
                 location.href = "report_page.html";

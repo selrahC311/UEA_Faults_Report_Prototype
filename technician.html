@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Homepage Technician</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sticky-footer-navbar/">
+
+
+
+
+
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="stylesheet" href="assets/style.css" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">UEA Estate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Task</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">User</a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="card border-0 shadow">
+            <div class="card-header text-white bg-primary rounded-0">CURRENT TASK</div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col-sm-2">Priority</th>
+                                <th scope="col-sm-4">Location</th>
+                                <th scope="col-sm-2">Room ID</th>
+                                <th scope="col-sm-4">Report</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5><span class="badge badge-outline bg-low">Low</span></h5>
+                                </td>
+                                <td>Toilet</td>
+                                <td>New Science</td>
+                                <td>Dripping tap</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- buttons for complete and more info -->
+                <div id="container" class="mx-auto" style="white-space:nowrap">
+                    <div id="button1" style="display:inline;">
+                        <button type="button" class="btn btn-success btn-lg mx-auto col-sm-5">
+                            COMPLETE
+                        </button>
+                    </div>
+                    <div id="button" style="display:inline; white-space:nowrap;">
+                        <button type="button" class="btn btn-info btn-lg mx-auto col-sm-5">
+                            MORE INFO
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="card border-0 shadow">
+            <div class="card-header bg-dark rounded-0 text-white">QUEUED TASK</div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-info table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col-sm-2">Priority</th>
+                                <th scope="col-sm-4">Location</th>
+                                <th scope="col-sm-2">Room ID</th>
+                                <th scope="col-sm-4">Report</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- <td>0954566</td> -->
+                                <td>
+                                    <h5><span class="badge bg-emergency">Emergency</span></h5>
+                                </td>
+                                <td>New Science</td>
+                                <td>unknown</td>
+                                <td>Lift Trap</td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <h5><span class="badge badge-outline bg-high">High</span></h5>
+                                </td>
+                                <td>Elizarbeth fry building </td>
+                                <td>0.08</td>
+                                <td>Broken Window</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    <h5><span class="badge badge-outline bg-low">Low</span></h5>
+                                </td>
+                                <td>Library</td>
+                                <td>Toilet</td>
+                                <td>Hand dryer not working</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
